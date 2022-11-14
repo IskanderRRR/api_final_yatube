@@ -1,5 +1,4 @@
 from django.shortcuts import get_object_or_404
-
 from rest_framework import filters, viewsets
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
@@ -32,8 +31,7 @@ class CommentViewSet(viewsets.ModelViewSet):
     permission_classes = (AuthorOrReadOnly,)
 
     def get_post(self):
-        post = get_object_or_404(Post, id=self.kwargs.get('post_id'))
-        return post
+        return get_object_or_404(Post, id=self.kwargs.get('post_id'))
 
     def get_queryset(self):
         return self.get_post().comments.all()

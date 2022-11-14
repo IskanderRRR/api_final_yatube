@@ -63,11 +63,11 @@ class Follow(models.Model):
         on_delete=models.CASCADE,
         related_name='following',
     )
-    UniqueConstraint(
-        fields=['user', 'following'],
-        name='unique_following',
-    )
 
     class Meta:
         verbose_name = 'Подписка'
         verbose_name_plural = 'Подписки'
+        UniqueConstraint(
+            fields=['user', 'following'],
+            name='unique_following',
+            )
