@@ -23,8 +23,7 @@ class Post(models.Model):
         upload_to='posts/', null=True, blank=True)
     group = models.ForeignKey(
         Group, on_delete=models.SET_NULL,
-        related_name="posts", blank=True, null=True
-    )
+        related_name="posts", blank=True, null=True)
 
     class Meta:
         verbose_name = 'Пост'
@@ -69,5 +68,4 @@ class Follow(models.Model):
         verbose_name_plural = 'Подписки'
         UniqueConstraint(
             fields=['user', 'following'],
-            name='unique_following',
-            )
+            name='unique_following',)
