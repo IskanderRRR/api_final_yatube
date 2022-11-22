@@ -12,6 +12,7 @@ The Yatube project is a social network in which users have the opportunity to cr
 
 ### Cloning a repository and switching to it on the command line:
 `https://github.com/IskanderRRR/api_final_yatube.git`
+
 `cd api_final_yatube`
 
 ### Cоздать и активировать виртуальное окружение:
