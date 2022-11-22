@@ -11,7 +11,7 @@ The Yatube project is a social network in which users have the opportunity to cr
 - Pytest
 
 ### Cloning a repository and switching to it on the command line:
-`git clone git@github.com:Eugenii1996/api_final_yatube.git`
+`https://github.com/IskanderRRR/api_final_yatube.git`
 `cd api_final_yatube`
 
 ### Cоздать и активировать виртуальное окружение:
